@@ -360,7 +360,46 @@ body {
   font-weight: 700;
   color: #008178;
 }
+#newsletter {
+  padding: 40px 0;
+}
 
+#newsletter .form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+#newsletter input {
+  flex: 1;
+  border-radius: 4px !important;
+}
+
+#newsletter button {
+  background-color: #008178;
+  color: #fff;
+  padding: 0 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#newsletter button:hover {
+  background-color: #00665f;
+}
+
+@media (max-width: 768px) {
+  #newsletter .form {
+    flex-direction: column;
+  }
+  
+  #newsletter button {
+    padding: 15px;
+    width: 100%;
+  }
+}
 #product1 .pro .cart {
   width: 40px;
   height: 40px;
