@@ -80,11 +80,54 @@ body {
 
 }
 
+
 #navbar {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+#contact-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.details li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.details i {
+  margin-top: 5px;
+  color: #008178;
+}
+
+.map {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 992px) {
+  #contact-details {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .map {
+    padding-bottom: 75%; /* Taller aspect ratio for mobile */
+  }
 
 #navbar li {
   list-style: none;
